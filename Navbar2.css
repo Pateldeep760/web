@@ -1,0 +1,35 @@
+body{
+    margin: 0;
+}
+
+.header{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+    align-items: center;
+    list-style: none;
+    line-height: 40px;
+    
+    .center{
+        display: flex;
+        gap: 20px;
+
+       
+    
+        .btn1{
+            background-color: rgb(202, 177, 75);
+            color: white;
+            border-radius: 0px;
+    
+        }
+    }
+    
+    .right{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+}
+
