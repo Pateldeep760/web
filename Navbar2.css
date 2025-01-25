@@ -1,35 +1,68 @@
 body{
     margin: 0;
+
 }
 
+.lq {
+    padding: 10px 10px;
+}
 .header{
     background-color: black;
     color: white;
     display: flex;
     justify-content: space-between;
-    padding: 0 30px;
+    padding: 20px 0px ;
     align-items: center;
     list-style: none;
-    line-height: 40px;
     
+    
+
     .center{
         display: flex;
-        gap: 20px;
+        gap: 30px;
+        align-items: center;
+        
+        li {
+            cursor: pointer;
+        }
+
 
        
     
         .btn1{
-            background-color: rgb(202, 177, 75);
+            background-color: #c19977;
             color: white;
-            border-radius: 0px;
+            border-radius: 10px;
+            cursor: pointer;
+            padding: 10px 10px;
     
         }
     }
     
+    .left{
+        margin-left: 20px;
+    }
     .right{
         display: flex;
         align-items: center;
-        gap: 20px;
+        gap: 30px;
+        margin-right: 20px;
     }
 }
 
+.lq:hover {
+    background-color: #c19977;
+    border-radius: 10px;
+    border-width: 25px;
+    border-width: 25px;
+    padding: 10px 10px;
+
+}
+
+.ls{
+    font-size: 25px;
+}
+.ls:hover{
+    color: #c19977;
+  
+}
