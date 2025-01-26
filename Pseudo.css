@@ -1,0 +1,99 @@
+
+
+.header{
+
+    li{
+        list-style: none;
+        text-align: center;
+       
+        .link:visited {
+            color: purple;
+        }
+
+        .link:active {
+            color: darkred;
+        }
+
+        .link:hover {
+            color: darkgreen;
+        }
+
+    }
+
+}
+
+.ts{
+
+    table{
+        width: 200px;
+        text-align: left;
+    }
+
+    .table1, th, tr, td{
+        border: 1px solid yellow;
+        border-collapse: collapse;
+         padding: 5px 5px;
+    }
+
+    tr:nth-child(2n){
+        background-color: lightgrey;
+
+    }
+    tr:hover{
+        font-weight: bold;
+        font-style: italic;
+    }
+
+}
+
+.form1{
+    border: 2px solid wheat;
+    width: 200px;;
+    padding: 10px;
+
+    .FI:focus{
+        outline: 2px solid blue;
+        outline-offset: 2px;
+
+    }
+    .btn:hover{
+        background-color: aquamarine;
+    }
+}
+
+.ul_list{
+    width: 150px;
+    border: 2px solid black;
+
+    ul:nth-child(1)::first-line{
+        color: blue;
+        font-weight: bold;
+    }
+
+    ul:last-child::first-line{
+        color: darkred;
+    }
+    
+}
+
+p{
+    text-align: justify;
+    text-indent: 50px;
+}
+
+p::first-letter{
+    font-size: 60px;
+}
+
+p::before{
+    content: "start ";
+    color: brown;
+    font-weight: Bold;
+    font-size: 30px;
+}
+p::after{
+    content: " End";
+    color: darkred;
+    font-weight: Bold;
+    font-size: 30px;
+}
