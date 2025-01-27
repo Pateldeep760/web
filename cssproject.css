@@ -1,0 +1,102 @@
+h1,h2 {
+    text-align: center;
+    font-weight: bolder;
+}
+
+.p1{
+    font-size: 18px;
+    text-align: justify;
+    justify-content: center;
+    text-indent: 20px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.box{
+    height: 200px;
+    width: 200px;
+    padding: 10px 10px;
+    margin: 20px 20px;
+    border: 10px solid red;
+    margin-right: 100px;
+    margin-left: 600px;
+}
+
+.flex{
+    border: 5px solid gray;
+    width: 250px;
+    height: 250px;
+    display: flex;
+    justify-content: space-around;
+
+    .box1,.box2,.box3{
+        margin: 10px 0px;
+        border: 5px solid gray;
+        width: 50px;
+        height: 50px;
+    }
+}
+
+.object{
+    list-style: none;
+    text-align: center;
+    padding: 10px 10px;
+    width: 250px;
+    background-color: antiquewhite;
+
+    li{
+        cursor: pointer;
+    }
+
+    li:hover{
+        background-color: brown;
+    
+        &::before{
+            content: "> ";
+        }
+    }
+
+}
+
+.forms{
+    padding: 10px 20px;
+    width: 200px;
+    height: 150px;
+    border: 2px solid black;
+
+    input{
+        border: none;
+        outline: 0px;
+        border-bottom: 1px solid black;
+        padding: 10px 10px;
+
+    }
+    input[type=text]:focus {
+        background-color: lightyellow;
+    }
+}
+
+.bb{
+    background-image: url(./Ai\ Image.webp);
+    padding: 10px 20px;
+    width: 250px;
+    height: 180px;
+    border: 10px solid brown;
+    border-radius: 20px;
+
+}
+
+.para{
+    font-family: "Playwrite IN", serif;;
+}
+
+.icon{
+    i{
+    font-size: 50px;
+}
+    #ic1:nth-child(odd){
+        color: gray;
+    }
+}
