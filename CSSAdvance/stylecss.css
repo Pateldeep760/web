@@ -130,6 +130,11 @@ h2{
 
 }
 
+.ap{
+    display: flex;
+    position: absolute;
+    justify-items: center;
+}
 
 .cricle{
     position:relative;
