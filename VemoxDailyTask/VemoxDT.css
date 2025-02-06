@@ -1,0 +1,521 @@
+body {
+    margin: 0;
+    background: grey;
+}
+
+/* ////////// Navbar ////////////// */
+.header {
+    background-color: rgb(0, 0, 0);
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 20px;
+    align-items: center;
+    list-style: none;
+    line-height: 40px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    li {
+        color: white;
+        cursor: pointer;
+
+        &:hover {
+            background-color: brown;
+
+        }
+
+
+    }
+
+    .left {
+        margin-left: 20px;
+        font-size: larger;
+    }
+
+    .center {
+        display: flex;
+        gap: 20px;
+        list-style: none;
+
+        .dropdown {
+            position: relative;
+
+
+
+            &:hover .content {
+                display: block;
+            }
+
+            .content {
+                position: absolute;
+                display: none;
+                z-index: 1000;
+
+            }
+        }
+
+
+
+        .btn1 {
+            background-color: rgb(184, 92, 11);
+            color: black;
+            border-radius: 10px;
+
+        }
+    }
+
+    .right {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        margin-right: 20px;
+    }
+}
+
+
+/* //////////Profile Card////////////// */
+
+.cardh2 {
+    text-align: center;
+    color: yellow;
+}
+
+#cardh2id {
+    color: black !important;
+}
+
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    border-radius: 10px;
+
+
+
+}
+
+.container {
+    background: #dad4d4;
+    border-radius: 10px;
+    height: fit-content;
+    padding: 5px;
+
+    #img11 {
+        border-radius: 5px;
+        width: 100%;
+        filter: drop-shadow(1px 1px 5px rgb(43, 43, 43));
+    }
+
+}
+
+.title {
+    color: darkgoldenrod;
+    font-size: 18px;
+}
+
+
+a {
+    padding-right: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    color: black;
+}
+
+/* /////////// Pricning Table ///////////// */
+
+.PT {
+    text-align: center;
+}
+
+.pricingTable {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+
+.columns {
+    width: 33.33%;
+    padding: 8px;
+    filter: drop-shadow(1px 1px 5px rgb(43, 43, 43));
+
+}
+
+.price {
+    list-style-type: none;
+    border: 1px solid #eee;
+    margin: 0;
+    padding: 0;
+}
+
+.price:hover {
+    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2)
+}
+
+.price .header {
+    background-color: #111;
+    color: white;
+    font-size: 25px;
+
+}
+
+#hpro {
+    background-color: burlywood !important;
+}
+
+.price li {
+    border-bottom: 1px solid #eee;
+    padding: 20px;
+    text-align: center;
+}
+
+.price .grey {
+    background-color: #eee;
+    font-size: 20px;
+}
+
+.button {
+    background-color: lightsalmon;
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+
+    &:hover {
+        filter: drop-shadow(1px 1px 5px rgb(43, 43, 43));
+        color: black;
+    }
+}
+
+
+h2 {
+    text-align: center;
+}
+
+/* //////////////////////// */
+
+.flexboxx {
+    border: 2px solid black;
+    justify-content: space-around;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    height: 300px;
+    padding: 10px;
+
+    .sidebar {
+        display: flex;
+        justify-content: center;
+        flex-grow: 0.25;
+        border: 2px solid orange;
+        height: 100%;
+
+    }
+
+    .mcontent {
+        display: flex;
+        justify-content: center;
+        flex-grow: 2;
+        border: 2px solid orange;
+        height: 100%;
+    }
+
+    .rightbar {
+        display: flex;
+        justify-content: center;
+        flex-grow: 0.25;
+        border: 2px solid orange;
+        height: 100%;
+    }
+}
+
+/* //////////////////////// */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+    padding: 10px;
+}
+
+.grid-item {
+    position: relative;
+    overflow: hidden;
+}
+
+.grid-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.grid-item:hover img {
+    transform: scale(1.1);
+}
+
+/* //////////////////////// */
+
+.scontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.spinner {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 8px solid orangered;
+    border-top: 8px solid transparent;
+    border-radius: 50%;
+    animation: spin 2s linear infinite;
+    margin-bottom: 20px;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.color-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #3498db;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.color-button:hover {
+    background-color: #2980b9;
+}
+
+
+/* //////////////////////// */
+.card {
+    width: 200px;
+    height: 300px;
+    cursor: pointer;
+
+}
+
+.card-inner {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.card:hover .card-inner {
+    transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+
+    p {
+        margin: 10px;
+        text-align: justify;
+    }
+}
+
+.card-front {
+    background-color: wheat;
+}
+
+.card-back {
+    background-color: lightgray;
+    color: Black;
+    transform: rotateY(180deg);
+}
+
+/* //////////////////////// */
+
+
+.formcontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.input-container {
+    position: relative;
+    margin: 20px;
+}
+
+input {
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s ease-in;
+}
+
+input:focus {
+    border: 2px solid #3498db;
+}
+
+label {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    color: black;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+
+input:focus~.lname {
+    left: 10px;
+    top: -20px;
+}
+
+
+/* ////////////// Polygon Section //////////// */
+
+.Polycontainer {
+    background-image: url(https://wallpapersok.com/images/high/artificial-intelligence-in-a-futuristic-digital-world-4gsfhamfbkvu0r5k.webp);
+    background-size: cover;
+    height: 400px;
+    position: relative;
+    text-align: center;
+    font-style: italic;
+    margin: 10px;
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+    filter: drop-shadow(1px 1px 5px rgb(43, 43, 43));
+}
+
+.text {
+    background-color: black;
+    color: white;
+    font-size: 68px;
+    font-weight: bold;
+    margin: 0 auto;
+    padding: 15px;
+    border: 5px solid gray;
+    position: absolute;
+    top: 33.33%;
+    left: 33.33%;
+}
+
+.text:hover {
+    mix-blend-mode: multiply;
+}
+
+/* Glowing Button */
+
+
+
+.button-container {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+
+.glow-button {
+    padding: 15px 30px;
+    font-size: 18px;
+    color: white;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 10px;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+    overflow: hidden;
+    transition: color 0.3s ease;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+.glow-button:hover {
+    color: rgba(255, 140, 0, 1);
+    box-shadow: 0 0 20px rgba(255, 0, 128, 0.7), 0 0 30px rgba(255, 140, 0, 0.7);
+    animation: glow-animation 1s infinite alternate;
+}
+
+@keyframes glow-animation {
+    0% {
+        box-shadow: 0 0 20px rgba(255, 0, 128, 0.7), 0 0 30px rgba(255, 140, 0, 0.7);
+    }
+
+    100% {
+        box-shadow: 0 0 40px rgba(255, 0, 128, 1), 0 0 60px rgba(255, 140, 0, 1);
+    }
+}
+
+
+/* Paralax */
+.parallax {
+    background-image: url("https://www.elegantthemes.com/blog/wp-content/uploads/2023/07/what-is-AI-768x382.jpg");
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+
+    .header {
+        flex-direction: column;
+    }
+
+    .pricingTable {
+        flex-direction: column;
+    }
+
+    .columns {
+        width: 100%;
+    }
+
+    .flexboxx {
+        flex-direction: column;
+        height: fit-content;
+        width: max-content;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: auto;
+    }
+}

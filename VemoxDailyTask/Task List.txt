@@ -1,0 +1,105 @@
+
+Here’s a comprehensive set of CSS and Advanced CSS tasks covering all major topics. These tasks will help your students build strong CSS skills from basics to advanced concepts.
+
+Basic CSS Tasks
+1. Selectors & Specificity
+Task: Create a profile card using different CSS selectors.
+
+Use element, .class, #id, and attribute selectors.
+Make some styles override others to explain specificity.
+Use the !important rule on one property and explain its effect. (USER PROFILE Heading)
+
+
+
+2. Box Model
+Task: Design a pricing table with proper margin, padding, and border.
+
+Use box-sizing: border-box;
+Apply different border styles (solid, dashed, double).
+Use shadows (box-shadow) for a 3D effect. (shadow Given in box & Button)
+
+
+3. Display & Positioning
+Task: Create a navigation bar with different positioning styles.
+
+Use position: fixed for a sticky navbar.
+Use position: absolute for a dropdown menu.
+Align items using flexbox. (Navbar Added in top & Sticky position Applied)
+
+4. Flexbox
+Task: Build a responsive dashboard layout using display: flex.
+
+Divide the screen into a sidebar, main content, and a right panel.
+Use justify-content, align-items, and flex-grow.
+Make the sidebar collapsible on smaller screens. (Tried But Not happned) how to do ?
+
+5. Grid Layout
+Task: Design a photo gallery using CSS Grid.
+
+Create a grid layout with 3 columns and auto-sized rows. done
+Span some images across multiple columns. ( how To Do ?)
+Add a hover effect that enlarges the image using transform: scale(). Done
+
+6. Media Queries (Responsive Design)
+Task: Make a portfolio website responsive. Done.
+
+Change the layout on different screen sizes (@media). 
+Hide/show sections based on screen width.
+Use rem and vh/vw units for fluid design. (How to DO?)
+
+
+Advanced CSS Tasks
+
+7. CSS Variables
+Task: Create a dark mode toggle using CSS variables. (Java Script)
+
+Define color variables (--bg-color, --text-color).
+Toggle the variables using JavaScript.
+Use transition for smooth color change.
+
+8. CSS Animations & Transitions
+Task: Animate a loading spinner using @keyframes.
+
+Rotate a circle continuously using transform: rotate().
+Create a hover effect where a button changes color with transition. Done
+
+9. CSS Transformations
+Task: Build a hover-based flip card effect.
+
+Flip a card using transform: rotateY(180deg).
+Add a 3D perspective effect using perspective. done
+Use backface-visibility: hidden.
+
+10. Pseudo-Elements & Pseudo-Classes
+Task: Create an input field with a floating label.
+
+Use ::before and ::after to style the label.
+Make the label move up when the user types using :focus. done
+
+11. CSS Clip Path & Masking
+Task: Create a diagonal hero section for a website.
+Use clip-path: polygon() to create diagonal shapes. done
+Use mask-image for text cutout effects.
+
+
+12. Advanced Hover Effects
+Task: Create a glowing button with hover animation.
+Add a gradient border using border-image.
+Use box-shadow to create a glowing effect. done
+Animate the glow effect when hovered.
+
+
+11. CSS Scroll Effects
+Task: Implement a parallax scrolling effect.
+
+Make a background image scroll slower than foreground text.  Done
+Use background-attachment: fixed.
+Add a fade-in effect on scroll using opacity and transform.
+
+
+12. Advanced Grid & Flexbox
+Task: Design a complex news website layout.
+ 
+Use CSS Grid for main structure.
+Use Flexbox for alignment inside articles. HOW TO DO 
+Apply gap for spacing.
