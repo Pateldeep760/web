@@ -1,0 +1,16 @@
+    <hr>
+    <br>
+    <input type="text" id="ip1">
+    <br>
+    <p id="para1"></p>
+    <hr>
+    <br>
+    <input type="date" id="dt1">
+    <button id="btn1" onclick="cl()"> submit data</button>
+    <p id="paragraph1">date</p>
+
+
+/////////////////////////////////////// js///
+
+const cl = ()=> document.getElementById('paragraph1').innerHTML=(document.getElementById('dt1').value)
+

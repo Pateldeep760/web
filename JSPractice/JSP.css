@@ -1,0 +1,64 @@
+h2{
+    text-align: center;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    gap: 20px;
+    height: fit-content;
+    width: fit-content;
+    margin: 40px auto;
+    position: relative;
+
+
+    .grid-item {
+        width: 200px;
+        height: 150px;
+
+    }
+
+    .overlay {
+        background-color: rgba(0, 0, 0, 0.185);
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        animation: move 0.4s;
+        display: none;
+
+    }
+
+    .close {
+        width: 30px;
+        height: 30px;
+        background: grey;
+        text-align: center;
+        line-height: 30px;
+        border-radius: 50%;
+        color: white;
+        font-size: 12px;
+        position: absolute;
+        top: 17px;
+        right: 16px;
+        cursor: pointer;
+
+    }
+
+    img {
+        height: 100%;
+        width: 100%;
+
+    }
+}
+
+
+@keyframes move {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
