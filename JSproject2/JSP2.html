@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open Modal & GST Calc</title>
+    <link rel="stylesheet" href="./jsp2.css">
+    <script src="./jsp2.js"></script>
+</head>
+<body>
+    <button onclick="show()">Open Model</button>
+
+    <div id="model" class="model">
+        <div class="modelcontent">
+            <span class="close" onclick="stop()"> X </span>
+            <h2>Model Header</h2>
+            <p>This is a simple model example.</p>
+        </div>
+    </div>
+    <br>
+    <hr>
+    <h2>GST Calculator</h2>
+    <div class="main">
+        <div class="input">
+            <input type="number" id="price" placeholder="Price"/>
+            <input type="number" id="quantity" placeholder="Quantity"/>
+            <input type="number" id="distance" placeholder="Distance in km"/>
+        </div>
+        <div class="output">
+            <p id="o1">Price:</p>
+            <p id="o2"> Quantity:</p>
+            <p id="o4">With GST:</p>
+            <p id="o3">Distance in km:</p>
+            <span> Total Price: <p id="totalprice"></p></span>
+            <button class="btn" onclick="calculate()">Calculate Value</button>
+        </div>
+    </div>
+    
+</body>
+</html>
