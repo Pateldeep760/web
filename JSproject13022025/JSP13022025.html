@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSP13022025</title>
+    <link rel="stylesheet" href="./jsp13022025.css">
+    <script src="./jsp13022025.js"></script>
+</head>
+
+<body>
+    <div class="mainblock">
+        <h2>find Max Value(num1, num2, num3)</h2>
+        <div class="inputs">
+            <input type="number" id="ip1" placeholder="Value1">
+            <input type="number" id="ip2" placeholder="Value2">
+            <input type="number" id="ip3" placeholder="Value3">
+        </div>
+        <div class="output">
+            <p id="op1">Max Value:</p>
+        </div>
+        <button onclick="calcmax()">Find Max value</button>
+    </div>
+    <br>
+    <hr>
+    <div class="mainblock">
+        <h2>Convert Temperature (Celsius ↔ Fahrenheit)</h2>
+        <div class="inputs">
+            <input type="number" id="TCip1" placeholder="Value1">
+            <input type="radio" id="DegC" name="Temp" value="DegC"> <label for="DegC">DegC</label>
+            <input type="radio" id="DegF" name="Temp" value="DegF"> <label for="DegF">DegF</label>
+
+        </div>
+        <div class="output">
+            <p id="TCop1">Value :</p>
+        </div>
+        <button onclick="calctemp()">Convert Value</button>
+    </div>
+    <br>
+    <hr>
+    <div class="mainblock">
+        <h1>Greeting User</h1>
+        <p id="greetingMessage"></p>
+        <div class="inputs">
+            <label for="nameInput">Enter your name:</label>
+            <input type="text" id="nameInput" placeholder="Your Name">
+            <br>
+        </div>
+        <button onclick="displayGreeting()">Greet Me!</button>
+    </div>
+
+    <br>
+    <hr>
+    <div class="mainblock">
+        <h1>Uppercase</h1>
+
+        <p id="uppercase"></p>
+
+        <div class="inputs">
+            <label for="UCInput">Write Something:</label>
+            <input type="text" id="UCInput" placeholder="Write to Uppercae">
+            <br>
+        </div>
+        <button onclick="uc()">UpperCase</button>
+    </div>
+
+    <br>
+    <hr>
+    <div class="mainblock">
+        <h1>String Length</h1>
+
+        <p id="stringlength"></p>
+
+        <div class="inputs">
+            <label for="StringInput">Write Something:</label>
+            <input type="text" id="StringInput" placeholder="To Measure Length">
+            <br>
+        </div>
+        <button onclick="SL()">Find Length</button>
+    </div>
+
+    <br>
+    <hr>
+    <div class="mainblock">
+        <h1>Sub-String Extraction</h1>
+
+        <p id="substringoutput"></p>
+
+        <div class="inputs">
+            <label for="StringInput1">Write</label>
+            <input type="text" id="StringInput1" placeholder="To Measure Length">
+            <label for="noinput1">Start:</label>
+            <input type="number" id="noinput1" placeholder="Index">
+            <label for="noinput2">End:</label>
+            <input type="number" id="noinput2" placeholder="Length">
+            <br>
+        </div>
+        <button onclick="Subscalc()">Extract</button>
+    </div>
+
+    <br>
+    <hr>
+    <div class="mainblock">
+        <h1>Word Replacement</h1>
+
+        <p id="WRoutput"></p>
+
+        <div class="inputs">
+            <label for="WRInput1">Write</label>
+            <input type="text" id="WRInput1" placeholder="Sentence">
+
+            <label for="Wordinput1">Write Target:</label>
+            <input type="text" id="Wordinput1" placeholder="word">
+
+            <label for="Wordinput2">Write word:</label>
+            <input type="text" id="Wordinput2" placeholder="to replace">
+
+            <br>
+        </div>
+        <button onclick="Replace()">Replace word</button>
+    </div>
+
+    <br>
+    <hr>
+    <div class="mainblock">
+        <h1>Split Input String into an Array</h1>
+
+        <p id="Arrayoutput"></p>
+
+        <div class="inputs">
+
+            <label for="ArrayInput1">Write</label>
+            <input type="text" id="ArrayInput1" placeholder="Comma seperated Strings">
+
+        </div>
+        <button onclick="ConArray()">Convert to Array</button>
+    </div>
+
+    <br>
+    <hr>
+    <div class="mainblock">
+        <h1>First Letter of Each Word to Uppercase</h1>
+
+        <p id="LetterOutput"></p>
+
+        <div class="inputs">
+
+            <label for="LetterInput1">Write:</label>
+            <input type="text" id="LetterInput1" placeholder="Sentence to Capitalise">
+
+        </div>
+        <button onclick="Capital()">Capitalise Each</button>
+    </div>
+    
+    
+    <br>
+    <hr>
+    <div class="mainblock">
+        <h1>String Contains a Word</h1>
+
+        <p id="wordOutput"></p>
+
+        <div class="inputs">
+
+            <label for="SentenceInput1">Write:</label>
+            <input type="text" id="SentenceInput1" placeholder="Sentence">
+
+            <label for="WInput1">Write:</label>
+            <input type="text" id="WInput1" placeholder="Word to find">
+
+        </div>
+        <button onclick="findword()">Find Word</button>
+    </div>
+
+
+    <br>
+    <hr>
+    <div class="mainblock">
+        <h1>Number of Words in a Sentence</h1>
+
+        <p id="NOWOutput"></p>
+
+        <div class="inputs">
+
+            <label for="SentenceInput10">Write:</label>
+            <input type="text" id="SentenceInput10" placeholder="Sentence">
+
+            
+        </div>
+        <button onclick="findnumber()">Find total words</button>
+    </div>
+
+    <br>
+    <hr>
+    <div class="mainblock">
+        <h1>Reverse the Input String</h1>
+
+        <p id="RSOutput"></p>
+
+        <div class="inputs">
+
+            <label for="RSInput1">Write:</label>
+            <input type="text" id="RSInput1" placeholder="word">
+
+            
+        </div>
+        <button onclick="Reverse()">Reverse It</button>
+    </div>
+
+    <br>
+    <hr>
+    <div class="mainblock">
+        <h1>Remove Extra Spaces from Input</h1>
+
+        <p id="RESOutput"></p>
+
+        <div class="inputs">
+
+            <label for="RESInput1">Write:</label>
+            <input type="text" id="RESInput1" placeholder="word">
+
+            
+        </div>
+        <button onclick="Removespace()">Remove Space</button>
+    </div>
+
+    <br>
+    <hr>
+    <div class="mainblock">
+        <h1>File Extension from a Filename</h1>
+
+        <p id="EXTOutput"></p>
+
+        <div class="inputs">
+
+            <label for="EXTInput1">Write:</label>
+            <input type="text" id="EXTInput1" placeholder="File Name">
+
+            
+        </div>
+        <button onclick="Extractfile()">Find Extension</button>
+    </div>
+
+
+    <br>
+    <hr>
+    <div class="mainblock">
+        <h1>File Extension from a Filename</h1>
+
+        <p id="STOutput"></p>
+
+        <div class="inputs">
+
+            <label for="STInput1">Write:</label>
+            <input type="text" id="STInput1" placeholder="String">
+            <label for="STInput2">Write:</label>
+            <input type="text" id="STInput2" placeholder="Counts">
+
+            
+        </div>
+        <button onclick="Repeatstring()">Repeat String</button>
+    </div>
+
+    <br>
+    <hr>
+    <div class="mainblock">
+        <h1>Mask Part of an Input</h1>
+
+        <p id="MaskOutput"></p>
+
+        <div class="inputs">
+
+            <label for="maskInput1">Write:</label>
+            <input type="text" id="maskInput1" placeholder="Phone Number">
+            
+        </div>
+        <button onclick="maskit()">Repeat String</button>
+    </div>
+
+    <br>
+    <hr>
+    <div class="mainblock">
+        <h1>First and Last Character of a String</h1>
+
+        <p id="FLCOutput"></p>
+
+        <div class="inputs">
+
+            <label for="FLCInput1">Write:</label>
+            <input type="text" id="FLCInput1" placeholder="String to find">
+            
+        </div>
+        <button onclick="findFLC()">Find first & Last</button>
+    </div>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,20 @@
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: aliceblue;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainblock{
+   
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: fit-content;
+}
+
+.inputs{
+    padding: 10px 10px;
+}
