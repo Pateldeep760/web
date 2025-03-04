@@ -1,0 +1,34 @@
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: aliceblue;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainblock{
+   
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: fit-content;
+}
+
+.inputs{
+    padding: 10px 10px;
+}
+
+button{
+
+margin: 10px
+
+}
+
+.btns{
+
+display: grid;
+grid-template-columns: auto auto auto;
+width: 500px;
+
+}
