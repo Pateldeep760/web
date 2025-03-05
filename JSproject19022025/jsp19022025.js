@@ -153,7 +153,50 @@ function CheckSpell() {
 }
 
 
+/// Array Merge & Remove Duplicates.
 
 
+function MergeRemove() {
+
+    let arr1 = [1, 2, 3, 4, 5];
+    let arr2 = [3,4,5,6,7,8,9];
+
+    let mergedArray = [...new Set([...arr1, ...arr2])]
+
+    document.getElementById("MROP").innerHTML = mergedArray;
+    document.getElementById("MR1").innerHTML = arr1 + " This is array 1";
+    document.getElementById("MR2").innerHTML = arr2 + " This is array 2";
+}
+
+
+function FindEven() {
+    let ip1 = document.getElementById("ArrEInput1").value;
+    let ip2 = document.getElementById("ArrEInput2").value;
+    let ip3 = document.getElementById("ArrEInput3").value;
+    let ip4 = document.getElementById("ArrEInput4").value;
+    let ip5 = document.getElementById("ArrEInput5").value;
+    const arr = [ip1, ip2, ip3, ip4, ip5];
+
+    const findout = arr.filter(a => a % 2 === 0)
+
+    document.getElementById("ArrEven").innerHTML = findout;
+}
+
+
+function CalculateARRPRODUCT() {
+let ip1 = document.getElementById("ArrEInput1").value;
+    let ip2 = document.getElementById("ArrEInput2").value;
+    let ip3 = document.getElementById("ArrEInput3").value;
+    let ip4 = document.getElementById("ArrEInput4").value;
+    let ip5 = document.getElementById("ArrEInput5").value;
+    const arr = [ip1, ip2, ip3, ip4, ip5];
+
+    const product = arr.reduce((a, b) => a * b, 0);
+
+    document.getElementById("ArrEven").innerHTML = product;
+}
+
+
+ 
 
 
