@@ -120,7 +120,141 @@
         </div>
     </div>
 
-   
+
+    <div class="mainblock">
+
+        <h1>Date Function</h1> <br>
+
+
+        <div class="DateOutputs">
+
+            <p id="CurrentDate">Current Date</p>
+
+            <p id="DOP1">Output1 : YY-MM-DD</p>
+
+            <p id="DOP2">Output2 : HH:MM:SS</p>
+
+            <p id="DOP3">Output3 : Week No.</p>
+
+            <p id="DOP4">Output4 : Days Left.</p>
+
+            <p id="DOP5">Output5 : Leap Year</p>
+
+            <p id="DOP6">Output6 : Date After 5 Days</p>
+
+            <p id="DOP7">Output7 : Date Diff</p>
+
+        </div>
+
+        <div class="btns">
+            <button onclick="FindToday()">Date in YY-MM-DD</button>
+
+            <button onclick="FindTime()">Time in HH:MM:SS</button>
+
+            <button onclick="FindWeek()">Find Week No.</button>
+
+            <button onclick="FindDleft()">Find Days Left</button>
+
+            <button onclick="Findleap()">Find Leap Year</button>
+
+            <button onclick="Find5Date()">Find 5days after date</button>
+
+            <div>
+            <label for="Date1">Date1</label><span><input type="date" id="Date1"></span> 
+            </div>
+
+            <div>
+                <label for="Date2">Date2</label><span><input type="date" id="Date2"></span> 
+            </div>
+
+            <button onclick="FindDiff()">Find Date Diff.</button>
+
+        </div>
+    </div>
+
+    <div class="mainblock">
+
+        <h1>IF ELSE Statement</h1><br>
+        
+        <div class="DateOutputs">
+
+            <p id="IFELSE1">Output:1</p>
+            <p id="IFELSE2">Output:2</p>
+            <p id="IFELSE3">Output:3</p>
+            <p id="IFELSE4">Output:4</p>
+            <p id="IFELSE5">Output:5</p>
+            <p id="IFELSE6">Output:6</p>
+        </div>
+
+        <div class="btns">
+            <div>
+                <label for="IFELSEinput1">Write</label><span><input type="number" id="IFELSEinput1" placeholder="+VE -Ve"></span> 
+                <button onclick="Findnumber1()">Calculate +VE -VE 0</button>
+            </div>
+            <div>
+                <label for="IFELSEinput2">Write</label><span><input type="number" id="IFELSEinput2" placeholder="Odd Even"></span> 
+                <button onclick="Findnumber2()">Calculate Odd Even</button>
+            </div>
+            <div>
+                <label for="IFELSEinput3">Write</label><span><input type="number" id="IFELSEinput3" placeholder="Find Greater"></span> 
+                <label for="IFELSEinput4">Write</label><span><input type="number" id="IFELSEinput4" placeholder="Find Greater"></span> 
+                <button onclick="Findnumber3()">Find Greater Value</button>
+            </div>
+            <div>
+                <label for="IFELSEinput5">Write</label><span><input type="number" id="IFELSEinput5" placeholder="Marks"></span> 
+                <button onclick="CalculateGrade()">Calculate Grade</button>
+            </div>
+            <div>
+                <label for="IFELSEinput6">Write</label><span><input type="number" id="IFELSEinput6" placeholder="Person Age"></span> 
+                <button onclick="CalculateAge()">Calculate Age</button>
+            </div>
+            <div>
+                <label for="IFELSEinput7">Write</label><span><input type="number" id="IFELSEinput7" placeholder="Bill Amount"></span> 
+                <button onclick="CalculateDiscount()">Calculate Discount</button>
+            </div>
+
+        </div>
+    </div>
+    <div class="mainblock">
+
+        <h1> Nested If Statements</h1><br>
+
+        <div class="DateOutputs">
+
+            <p id="Nested1">Output:1</p>
+            <p id="LoginResult">Output:2</p>
+            <p id="Nested3">  Output:3</p>
+            <p id="Trafficlight">  Output:3</p>
+
+           
+        </div>
+
+        <div class="btns">
+            <div>
+                <label for="Nestedinput1">Write</label><span><input type="number" id="Nestedinput1" placeholder="Year"></span> 
+                <button onclick="checkLeapYear()">Check Leap Year</button>
+            </div>
+            <div>
+                <label for="Logininput1">Write</label><span><input type="text" id="Logininput1" placeholder="UserName - admin"></span> 
+                <label for="Logininput2">Write</label><span><input type="text" id="Logininput2" placeholder="PassWord - password"></span> 
+                <button onclick="login()">Login!</button>
+            </div>
+            <div>
+                <label for="comparinput1">Write</label><span><input type="text" id="comparinput1" placeholder="Value1"></span> 
+                <label for="comparinput2">Write</label><span><input type="text" id="comparinput2" placeholder="Value2"></span> 
+                <label for="comparinput3">Write</label><span><input type="text" id="comparinput3" placeholder="Value3"></span> 
+                <button onclick="findLargest()">find Largest</button>
+            </div>
+    
+            <div>
+                <button id="red" onclick="Red()" style="background-color: red">Red</button>
+                <button id="yellow" onclick="Yellow()" style="background-color: yellow">Yellow</button>
+                <button id="green" onclick="Green()" style="background-color: green">Green</button>
+                <button id="Invalid" onclick="Invalid()" style="background-color: purple">Invalid</button>
+            </div>
+    
+        </div>
+    </div>
 
 </body>
 
