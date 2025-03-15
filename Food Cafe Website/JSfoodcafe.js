@@ -1,0 +1,347 @@
+
+let dis1 = document.querySelector(".dropdown-1").style;
+let isShow1 = true;
+let dis2 = document.querySelector(".dropdown-2").style;
+let isShow2 = true;
+let dis3 = document.querySelector(".dropdown-3").style;
+let isShow3 = true;
+let dis4 = document.querySelector(".dropdown-4").style;
+let isShow4 = true;
+let dis5 = document.querySelector(".dropdown-5").style;
+let isShow5 = true;
+
+
+
+function show1() {
+
+	if (isShow1) {
+		dis1.display = "none";
+		isShow1 = false;
+	} else {
+		dis1.display = "block";
+		dis2.display = "none";
+		dis3.display = "none";
+		dis4.display = "none";
+		dis5.display = "none";
+		isShow1 = true;
+	}
+
+}
+
+
+function show2() {
+
+	if (isShow2) {
+		dis2.display = "none";
+		isShow2 = false;
+	} else {
+		dis2.display = "block";
+		dis1.display = "none";
+		dis3.display = "none";
+		dis4.display = "none";
+		dis5.display = "none";
+		isShow2 = true;
+
+	}
+
+}
+
+function show3() {
+
+	if (isShow3) {
+		dis3.display = "none";
+		isShow3 = false;
+	} else {
+		dis3.display = "block";
+		dis1.display = "none";
+		dis2.display = "none";
+		dis4.display = "none";
+		dis5.display = "none";
+		isShow3 = true;
+
+	}
+
+}
+
+function show4() {
+
+	if (isShow4) {
+		dis4.display = "none";
+		isShow4 = false;
+	} else {
+		dis4.display = "block";
+		dis1.display = "none";
+		dis2.display = "none";
+		dis3.display = "none";
+		dis5.display = "none";
+		isShow4 = true;
+
+	}
+
+}
+
+
+function show5() {
+
+	if (isShow5) {
+		dis5.display = "none";
+		isShow5 = false;
+	} else {
+		dis5.display = "block";
+		dis1.display = "none";
+		dis2.display = "none";
+		dis3.display = "none";
+		dis4.display = "none";
+		isShow5 = true;
+
+	}
+
+}
+
+
+
+const images = document.querySelectorAll(".image-continer img")
+let i = 0;
+let j = images.length;
+
+function next1(){
+	document.getElementById("image" + (i+1)).classList.remove("active");
+	i = (j + i + 1) % j;
+	document.getElementById("image" + (i+1)).classList.add("active");
+}
+
+function prev1(){
+	document.getElementById("image" + (i+1)).classList.remove("active");
+	i = (j + i - 1) % j;
+	document.getElementById("image" + (i+1)).classList.add("active");
+}
+
+
+var tab1 = document.getElementById("image4").style;
+var tab2 = document.getElementById("image5").style;
+var tab3 = document.getElementById("image6").style;
+
+function home(){
+   tab1.display="block";
+   tab2.display = "none";
+   tab3.display = "none";
+}
+
+function service(){
+   tab2.display="block";
+   tab1.display = "none";
+   tab3.display = "none";
+}
+
+function contact(){
+   tab3.display="block";
+   tab2.display = "none";
+   tab1.display = "none";
+}
+
+var box_1 = document.getElementById("box1").style;
+var box_2 = document.getElementById("box2").style;
+var box_3 = document.getElementById("box3").style;
+var box_4 = document.getElementById("box4").style;
+var box_5 = document.getElementById("box5").style;
+
+function coffee(){
+   box_1.display="flex";
+   box_2.display = "none";
+   box_3.display = "none";
+   box_4.display = "none";
+   box_5.display = "none";   
+}
+
+function drink(){
+   box_2.display="flex";
+   box_1.display = "none";
+   box_3.display = "none";
+   box_4.display = "none";
+   box_5.display = "none";  
+}
+
+function fastfood(){
+   box_3.display="flex";
+   box_2.display = "none";
+   box_1.display = "none";
+   box_4.display = "none";
+   box_5.display = "none";   
+}
+
+function tea(){
+   box_4.display="flex";
+   box_2.display = "none";
+   box_3.display = "none";
+   box_1.display = "none";
+   box_5.display = "none";   
+}
+
+function all(){
+   box_5.display = "flex";
+   box_2.display = "none";
+   box_3.display = "none";
+   box_4.display = "none";
+   box_1.display = "none";    
+}
+
+
+function validateForm(){
+	var value1=document.getElementById("name").value;
+	var value2=document.getElementById("email").value;
+	var value3=document.getElementById("pwd").value;
+	var value4=document.getElementById("description").value;
+
+	if (value1 == "") {
+		document.getElementById("error1").innerHTML="please fill the field";
+		return false;
+	}
+
+	if (value1.length<="2") {
+		document.getElementById("error1").innerHTML="minimum character length is 2";
+		return false;
+	}
+
+	if (value2 == "") {
+		document.getElementById("error2").innerHTML="please fill the field";
+		return false;
+	}
+
+	if(value2.replace(/\s/g,"").length<=0){
+        document.getElementById("error2").innerHTML="** White Space Are Not Allowed";
+        return false;
+    }
+
+	if (value2<="2" && value2>="30") {
+		document.getElementById("error2").innerHTML="Length Shoud be beetween 3 and 30 ";
+		return false;
+	}
+
+	if (value2.indexOf('@') <=0) {
+		document.getElementById("error2").innerHTML="emailid is not Ok ";
+		return false;
+	}
+    
+     if((value2.charAt(value2.length-4)!='.') && (value2.charAt(value2.length-3)!='.')){
+        document.getElementById("error2").innerHTML="dot is not available";
+        return false;
+    }
+
+    if (value3 == "") {
+    	document.getElementById("error3").innerHTML ="please fill the field";
+    	return false;
+    }
+
+    if (value3.length<="8" && value3.length>="15") {
+    	document.getElementById("error3").innerHTML ="character should be 8 to 15";
+    	return false;
+    }
+
+    if (value4 == "") {
+    	document.getElementById("error4").innerHTML ="please fill the field";
+    	return false;
+    }
+}
+
+
+
+function loginshow(){
+	var pre = document.querySelector(".login-modal").style;
+
+	if (pre.display=="block") {
+		pre.display = "none";
+		pre.width = "0%";
+	}
+	else{
+		pre.display = "block";
+		pre.width = "100%";
+	}
+}
+
+function hide(){
+	var pre1 = document.querySelector(".login-modal").style;
+
+	if (pre1.display=="block") {
+		pre1.display = "none";
+		pre1.width = "0%";
+	}
+	else{
+		pre1.display = "block";
+		pre1.width = "100%";
+	}
+	
+}
+
+
+var lg_error = document.getElementById("login-error");
+var patten = /\s/g;
+var patten1 = "@";
+
+ 
+function first(){
+	var p = document.getElementById("email1").value;
+
+	if (p == "") {
+        lg_error.innerHTML="please fill the field";
+        return false;
+	}
+
+	if (p.match(patten)) {
+		lg_error.innerHTML ="white space is not allowd";
+		return false;
+	}
+
+    if (p.indexOf("@")<=0) {
+    	lg_error.innerHTML = "Email id is not Ok";
+    	return false;
+    }
+
+    if (p.length<="2" || p.length>="25") {
+    	lg_error.innerHTML ="character should be beetween 3 to 25";
+    	return false;
+    }
+
+    if ((p.charAt(p.length-4) !=".") && (p.charAt(p.length-3) !=".")){
+    	lg_error.innerHTML="Email Id is not valid";
+    	return false;
+    }
+
+    lg_error.innerHTML ="";
+	return true;
+}
+
+function last(){
+	var s = document.getElementById("pwd1").value;
+	var special = /^[A-Za-z]\w{7,14}$/
+
+
+	if (s =="") {
+		lg_error.innerHTML ="please fill the field";
+		return false;
+	}
+
+	if (s.match(patten)) {
+		lg_error.innerHTML = "white space is not allowed";
+		return false;
+	}
+
+	if (s.length<=8 ){
+		lg_error.innerHTML = "please write at least 8 character";
+		return false;
+	}
+
+	if (s.match(special)) {
+		lg_error.innerHTML = "write at least 8 character, 1 numeric, 1 uppercase, 1 lowercase and 1 special character";
+		return false;
+	}
+
+	lg_error.innerHTML ="";
+	return true;
+}
+
+function validate(){
+	if (!first() || !last()) {
+		lg_error.innerHTML = "please fill all the details";
+		return false;
+	}
+}
